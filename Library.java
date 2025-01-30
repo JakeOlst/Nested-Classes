@@ -20,7 +20,7 @@ class Library {
       void setDescription() {
         if(Library.this.objType.equals("book")) {
           if(Library.this.getObjName().equals("nonfiction")) {
-            this.description = "Factual stories/accounts based on true events";
+            this.description = "Factual stories/accounts based on true events.";
           } else {
             this.description = "Literature that is imaginary.";
           }
@@ -36,7 +36,16 @@ class Library {
   
   public class Main {
     public static void main(String[] args) {
-      
+      Library fiction = new Library("book", "fiction");
+
+      Library.Book book1 = fiction.new Book();
+    book1.setDescription();
+    System.out.println("Fiction Book Description = " + book1.getDescription());
+ 
+    Library nonFiction = new Library("book", "nonfiction");
+    Library.Book book2 = nonFiction.new Book();
+    book2.setDescription();
+    System.out.println("Non-fiction Book Description = " + book2.getDescription());
     }
   }
   
