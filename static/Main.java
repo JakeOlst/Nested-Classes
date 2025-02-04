@@ -24,6 +24,7 @@ class VendingMachine {
 
 public class Main {
   public static void main(String[] args){
-    
+    VendingMachine.ChocolateBar mikesChocolateBar = new VendingMachine.ChocolateBar();
+    VendingMachine.BagOfChips gabbysBagOfChips = new VendingMachine.BagOfChips();
   }
 }
